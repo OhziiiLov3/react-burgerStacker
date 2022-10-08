@@ -1,7 +1,7 @@
 import React from 'react'
 import Ingredient from './Ingredient'
 
-const IngredientList = () => {
+const IngredientList = (props) => {
 const ingredientObjects = [
   { name: "Kaiser Bun", color: "saddlebrown" },
   { name: "Sesame Bun", color: "sandybrown" },
@@ -19,9 +19,11 @@ const ingredientObjects = [
 
 const ingredients = ingredientObjects.map((ingredientObject, idx)=>{
     return(
-        <Ingredient key={` yum ${idx}`}
+        <Ingredient 
+        key={` yum ${idx}`}
         name={ingredientObject.name}
-        color={ingredientObject.color}/>
+        color={ingredientObject.color}
+        handleIngredientClick={props.handleIngredientClick}/>
     )
 })
 

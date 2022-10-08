@@ -3,7 +3,7 @@ import React from 'react'
 const Ingredient = (props) => {
   return (
     <div>
-        <h3>{props.name}</h3>
+       <button handleIngredientClick={props.handleIngredientClick}>{props.name}</button>
     </div>
   )
 }
