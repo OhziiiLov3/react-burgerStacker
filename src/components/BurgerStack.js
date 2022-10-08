@@ -1,13 +1,13 @@
 import React from 'react'
-import IngredientList from './IngredientList'
+import Ingredient from './Ingredient'
 
 const BurgerStack = () => {
   return (
     <div>
-        BurgerStack
-       <IngredientList/> 
+      BurgerStack
+      <Ingredient />
     </div>
-  )
+  );
 }
 
 export default BurgerStack
